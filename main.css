@@ -1,0 +1,119 @@
+/*edição geral da página*/
+*{
+box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Cabeçalho */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    transition: all 0.08s ease;
+}
+
+header li a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+body > header{
+    background-color: rgb(59, 59, 71);
+    padding: 18px;
+}
+
+.container{
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1033px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 10px; /* Remove margens padrão do h1 */
+    padding: 0;
+    color: #fff;
+    font-size: 48px ;
+}
+
+header nav ul {
+    display: flex; /* reposiciona a lista de forma 'flex', lado a lado*/
+    list-style:none; /* Remove o estilo de lista do modelo padrão da lista não ordenada*/
+    gap: 20px; /* Espaço entre os itens */
+}
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article article img{
+    /*height: 180px;*/
+    width: 100%;
+}
+
+.article article{
+    width: 30%;
+}
+
+section{
+    padding: 20px 0;
+}
+
+section h2,
+.article article{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.article article h3{
+    padding: 8px 0;
+}
+
+.article article a{
+    background-color: rgb(96, 96, 136);
+    border-radius: 14px;
+    text-decoration: none;
+    padding: 3px 20px;
+    color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.05s ease;
+}
+
+.article article a:hover{
+    background-color: rgb(54, 40, 136);
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+p{
+    padding: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#sport{
+    background-color: rgba(0, 128, 0, 0.2);
+}
+
+#economy{
+    background-color: rgba(128, 115, 0, 0.2);
+}
+
+#moda{
+    background-color: rgba(128, 0, 0, 0.2);
+}
+
+#tecno{
+    background-color: rgba(0, 45, 128, 0.2);
+}
+
+.article article a:active {
+    transform: scale(0.98);
+}
